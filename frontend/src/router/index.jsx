@@ -6,7 +6,6 @@ import Mascotas from '../components/Mascotas'
 import Contacto from '../components/Contacto'
 import Adoptar from '../components/Adoptar'
 import Login from '../pages/Login/Login'
-import TodasMascotas from '../components/TodasMascotas'
 import PetsView from '../pages/pets/PetsView'
 
 
@@ -47,7 +46,10 @@ export const router = createBrowserRouter([
         path: "/adoptar/todas",
         element: <PetsView/>
       },
-     
+      {
+        path: "/register",
+        element: <Signup />,
+      },
 
 
     ],
