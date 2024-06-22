@@ -1,74 +1,64 @@
 .mascotas-container {
-    text-align: center;
-    
+  text-align: center;
 }
 
 h1 {
-    color: #004AAD;
-    font-size: 60px;
-    margin-bottom: 5px;
-    /* Añadir un margen inferior para separación */
+  color: #004aad;
+  font-size: 3rem;
+  margin-bottom: 5px;
 }
 
 .mascotas-links {
-    display: flex;
-    justify-content: center;
-    gap: 380px;
-    /* Mantener el gap entre los elementos */
-    margin-bottom: 440px;
-    /* Añadir un margen inferior para separación del botón */
-    /* Esta es la sombra de PEDRO / Estefi */
+  display: flex;
+  justify-content: center;
+  gap: 380px;
+  margin-bottom: 440px;
 }
 
 .mascota-card {
-    position: relative;
-    
+  position: relative;
 }
 
 .mascota-card img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    margin-bottom: 1px;
-    /* Añadir margen inferior para separación */
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  margin-bottom: 1px;
 }
 
 .mascota-card img:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(20px 10px 4px hsl(240, 1%, 39%)); 
-
+  transform: scale(1.05);
+  filter: drop-shadow(20px 10px 4px hsl(240, 1%, 39%));
 }
 
 .mascota-link {
-    position: absolute;
-    top: 1px;
-    bottom: 10px;
-    /* Ajustar posición para mejorar el diseño */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: transparent;
-    font-size: 25px;
-    color: hsl(0, 0%, 22%);
-    text-decoration: none;
-    font-weight: bold;
+  position: absolute;
+  top: 1px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  font-size: 25px;
+  color: hsl(0, 0%, 22%);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .adopt-button {
-    background-color: #004AAD;
-    color: #ffffff;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 120px;
-    /* Añadir un margen superior para separación */
-    text-decoration: none;
+  background-color: #004aad;
+  color: #ffffff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 120px;
+  text-decoration: none;
 }
 
 .adopt-button:hover {
-    background-color: #4BB5CB;
+  background-color: #4bb5cb;
 }

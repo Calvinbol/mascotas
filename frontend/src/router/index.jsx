@@ -7,6 +7,7 @@ import Contacto from '../components/Contacto'
 import Adoptar from '../components/Adoptar'
 import Login from '../pages/Login/Login'
 import PetsView from '../pages/pets/PetsView'
+import PetDetails from '../pages/PetDetails/PetDetails'
 
 
 export const router = createBrowserRouter([
@@ -50,7 +51,10 @@ export const router = createBrowserRouter([
         path: "/register",
         element: <Signup />,
       },
-
+      {
+        path: '/adoptar/animal/:id', // Nueva ruta para los detalles del animal
+        element: <PetDetails />,
+      },
 
     ],
   },
