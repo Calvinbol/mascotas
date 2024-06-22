@@ -1,8 +1,7 @@
-import LoginForm from "../../components/LoginFrom";
-import './Login.css'
+import LoginForm from '../../components/LoginFrom';
+import './Login.css';
 
 function Login() {
- 
   return (
     <>
       <LoginForm />
