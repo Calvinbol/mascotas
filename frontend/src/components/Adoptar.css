@@ -1,0 +1,10 @@
+.adoptar-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    background-image: url('../../public/AdoptarEs.png');
+    background-position: center; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}

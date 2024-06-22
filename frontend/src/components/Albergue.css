@@ -1,0 +1,46 @@
+.formulario{
+    background-color: #4bb5cb;
+    padding: 60px;
+    margin: 50px;
+    margin-left: 35em;
+    height: 20em;
+    width: 40em;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.input{
+    width: 40em;
+    height: 2.5em;
+    border-radius: 15px;
+    border: none;
+    padding-left: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.enviar{
+    background-color: #0044ad;
+    border-radius: 22px;
+    height: 2.6em;
+    width: 8em;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.textarea{
+    height: 5em;
+    resize: none;
+}
+
+.check{
+    height: 10em;
+    width: 10em;
+}
