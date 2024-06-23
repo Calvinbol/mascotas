@@ -25,7 +25,7 @@ function PetDetails() {
   return (
     <div className="pet-details">
       <h1>{pet.name}</h1>
-      <img src={`/petdatabase.png`} alt={pet.name} className="pet-image" />
+      <img src={`../../../public/pets.png`} alt={pet.name} className="pet-image" />
       <p>
         <strong>Raza:</strong> {pet.race}
       </p>
