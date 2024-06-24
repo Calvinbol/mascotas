@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import PropTypes from "prop-types";
 import "./Layout.css";
 
 const Layout = () => {
@@ -15,7 +14,7 @@ const Layout = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/adoptar">Adoptar es</Link>
+              <Link to="/adoptar">Adoptar</Link>
             </li>
             <li>
               <Link to="/mascotas">Mascotas</Link>
@@ -37,10 +36,6 @@ const Layout = () => {
       </footer>
     </>
   );
-};
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

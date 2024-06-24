@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { getPetById } from "../../Services/pets.service"; // Asegúrate de tener esta función en tu servicio
-import { Link } from "react-router-dom"; // Importa Link para navegar entre rutas
+import { useParams, Link } from "react-router-dom";
+import { getPetById } from "../../Services/pets.service";
 import './PetDetails.css';
 
 function PetDetails() {
@@ -25,7 +24,7 @@ function PetDetails() {
   return (
     <div className="pet-details">
       <h1>{pet.name}</h1>
-      <img src={`../../../public/pets.png`} alt={pet.name} className="pet-image" />
+      <img src={pet.imageUrl} alt={pet.name} className="pet-image" />
       <p>
         <strong>Raza:</strong> {pet.race}
       </p>

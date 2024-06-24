@@ -31,6 +31,9 @@ const Pet = sequelize.define(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    imageUrl: { 
+      type: DataTypes.STRING, 
+  },
   // AÑADIR IMAGEN URL (tableplus)
   },
   { timestamps: false }

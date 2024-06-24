@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
 }
 
@@ -85,4 +85,8 @@ nav ul li a:hover {
 
 footer p {
   margin: 0;
+}
+
+main {
+  margin-top: 40px; /* Ajusta este valor según la altura del encabezado */
 }

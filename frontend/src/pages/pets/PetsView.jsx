@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getAllMascotas } from "../../Services/pets.service";
-import "./PetsView.css";
+import './PetsView.css';
 
 function PetsView() {
   const [pets, setPets] = useState([]);
@@ -40,7 +40,8 @@ function PetsView() {
               className="card"
               onClick={() => navigate(`/adoptar/animal/${pet.id}`)}
             >
-              <p style={{ color: "#0044ad" }}>{pet.name}</p>
+              <img src={pet.imageUrl} alt={pet.name} className="pet-image" />
+              <p className="pet-name">{pet.name}</p>
               <p>{pet.race}</p>
               <p>{pet.age}</p>
               <p>{pet.size}</p>
