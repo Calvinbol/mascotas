@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getAllMascotas } from "../../Services/pets.service";
+import PetCard from "../../components/PetCard"; // Importa el componente PetCard
 import './PetsView.css';
 
 function PetsView() {
@@ -35,17 +36,11 @@ function PetsView() {
       <div className="pets-links">
         {pets.length > 0 &&
           pets.map((pet) => (
-            <div
+            <PetCard
               key={pet.id}
-              className="card"
+              pet={pet}
               onClick={() => navigate(`/adoptar/animal/${pet.id}`)}
-            >
-              <img src={pet.imageUrl} alt={pet.name} className="pet-image" />
-              <p className="pet-name">{pet.name}</p>
-              <p>{pet.race}</p>
-              <p>{pet.age}</p>
-              <p>{pet.size}</p>
-            </div>
+            />
           ))}
       </div>
     </div>
