@@ -1,74 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #ffffff;
+  overflow: hidden; /* Evita el scroll vertical */
+}
+
 .home-background {
   background-image: url('../../public/fondoBackground.png');
-  position: relative;              
-  background-size: cover;                                                                        
+  background-size: cover;
   background-position: center;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-}
-
-.imagen{
-  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
-  background-position: center; /* Centra la imagen en el contenedor */
-  background-repeat: no-repeat;
-
+  height: 75vh; /* Ajusta la altura al 100% del viewport */
 }
 
 .text {
-margin: 100px;
-position: relative;
-z-index: 1;
-font-size: 40px;
-letter-spacing: 1px; /* Ajusta el espaciado entre letras */
-line-height: 0.4; /* Ajusta la altura de línea para un mejor aspecto */
-height: 500px; /* Manten la altura si es necesario */
-}
-
-.text {
-margin: 100px;
-position: relative;
-z-index: 1;
-font-size: 40px;
-letter-spacing: 1px; /* Ajusta el espaciado entre letras */
-line-height: 0.4; /* Ajusta la altura de línea para un mejor aspecto */
-height: 500px; /* Manten la altura si es necesario */
+  margin: 100px;
+  position: relative;
+  z-index: 1;
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 0.4;
+  height: 400px; /* Ajusta la altura según necesidades */
 }
 
 .textoderecho {
-margin-right: 100px;
+  margin-right: 100px;
 }
 
 .greyFont {
-color: grey;
+  color: grey;
 }
 
 .blueBold {
-color: #004AAD;
-font-weight: bold;
+  color: #004AAD;
+  font-weight: bold;
 }
 
 .blueBoldFont {
-color: #4BB5CB;
-font-weight: bold;
-font-size: larger; 
+  color: #4BB5CB;
+  font-weight: bold;
+  font-size: larger;
 }
 
 .button {
-padding: 10px 20px;
-margin-top: 20px;
-background-color: #4BB5CB;
-color: white;
-font-size: 1.2rem;
-border: none;
-cursor: pointer;
-border-radius: 30px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4BB5CB;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
 }
 
 .button:hover {
-background-color: #0097A7;
-border: #004AAD;
+  background-color: #0097A7;
 }
-
