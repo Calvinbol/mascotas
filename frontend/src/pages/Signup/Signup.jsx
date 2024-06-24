@@ -8,7 +8,8 @@ function Signup() {
   const [password, setPassword] = useState("");
   const [doublePass, setDoublePass] = useState("");
   const [email, setEmail] = useState("");
-  const [errs, setErrs] = useState(""); //Para mostrar si hay algún error
+  const [description, setDescription] = useState(""); // Nuevo estado para descripción
+  const [errs, setErrs] = useState(""); // Para mostrar si hay algún error
 
   const navigate = useNavigate();
 
@@ -16,11 +17,17 @@ function Signup() {
     event.preventDefault();
     if (password === doublePass) {
       try {
+        // Validación de contraseña
         if (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password)) {
-          await signup(email, fullname, password);
-          setErrs("");
-          alert("Registro exitoso");
-          navigate("/login");
+          // Validación de descripción no vacía
+          if (description.trim() === "") {
+            setErrs("Debes proporcionar una descripción del hostal");
+          } else {
+            await signup(email, fullname, password, description); // Envía también la descripción
+            setErrs("");
+            alert("Registro exitoso");
+            navigate("/login");
+          }
         } else {
           setErrs("La contraseña debe tener al menos 8 caracteres: 1 caracter especial, 1 minúscula, 1 mayúscula");
         }
@@ -63,7 +70,13 @@ function Signup() {
           type="password"
           onChange={(event) => setDoublePass(event.target.value)}
         />
-
+        <label className="form-label">Descripción del Albergue:</label> {/* Nuevo campo */}
+        <textarea
+          className="form-input"
+          placeholder="Introduce la descripción del hostal"
+          onChange={(event) => setDescription(event.target.value)}
+        />
+        
         {errs && <p className="form-error">{errs}</p>}
 
         <button className="form-button" onClick={handleClick}>Enviar</button>
