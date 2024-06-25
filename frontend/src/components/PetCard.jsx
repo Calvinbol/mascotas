@@ -1,4 +1,3 @@
-// src/components/PetCard.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from '@mui/material/Card';
@@ -6,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import { Link } from 'react-router-dom'; // Importa Link de react-router-dom
+import { Link } from 'react-router-dom'; 
 
 export default function PetCard({ pet, onClick, showContactLink = false }) {
   return (
